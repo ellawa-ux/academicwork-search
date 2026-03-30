@@ -1,6 +1,6 @@
 # Testi: Academic Work Finland
 
-Automatisoitu end-to-end-testi, jossa käydään läpi seitsemän skenaariota:
+Automatisoitu end-to-end-testi, jossa käydään läpi viisi skenaariota:
 1. Sivun lataus ja testiä varten tarvittavien elementtien tarkistus
 2. Hakusanan kirjoitus onnistuu
 3. Haun testaus hakusanalla "quality"

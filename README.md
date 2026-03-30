@@ -13,13 +13,15 @@ Automatisoitu end-to-end-testi, jossa käydään läpi seitsemän skenaariota:
 
 Testit 1-5 menevät läpi ilman huomautuksia.
 
-**Keyword search does not filter results server-side.** Searching "quality" and an empty string both return the same number of jobs. Documented in TC-06 and TC-07.
+**Huomiona**, että jos hakusanaa ei syötä enterillä, ei hakusanaa huomioida. Tämä toistuu varsinkin desktopissa selaimessa.
+Toisto-ohjeet:
+1. Kirjoita hakukenttään "quality". Älä paina enteriä.
+2. Valitse Search now -toiminto
+3. Koska hakusanaa ei huomioida, haku ei tapahdu.
+4. Valitse sitten Clear filter -toiminto.
+5. Kirjoittamasi hakusana jää hakukenttään.
 
-## Tech Stack
+
+## Tekninen info
 - [Playwright](https://playwright.dev/) — JavaScript
-- Browsers: Chromium, Firefox, WebKit
-
-## How to Run
-npm install
-npx playwright install
-npx playwright test
+- Selaimet: Chromium, Firefox, WebKit
